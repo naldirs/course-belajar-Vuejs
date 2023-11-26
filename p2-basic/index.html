@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue First Time</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Learning Vue.js</h1>
+    </header>
+    <!-- creating and connecting vue with #id -->
+    <section id="user-goal">
+      <h2>My Currnet Goal</h2>
+      <!-- interpolation -->
+      <p>{{myGoal}}</p>
+      <!-- /interpolation -->
+      <!-- v-bind directive-->
+      <p>
+        Learn more about <a v-bind:href="theLink" target="_blank">Vue.js</a> at
+        {{theLink}}
+      </p>
+      <!-- /v-bind directive-->
+      <!-- method calls and data -->
+      <p>{{randomNumber()}}</p>
+      <p>{{randomNumber2()}}</p>
+      <!-- /method calls and data -->
+      <!-- html content directive -->
+      <p v-html="myGoalC"></p>
+      <!-- /html content directive -->
+    </section>
+    <!-- /creating and connecting vue with #id -->
+  </body>
+</html>
